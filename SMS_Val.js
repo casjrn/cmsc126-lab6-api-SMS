@@ -7,7 +7,8 @@ fetch ("https://valorant-api.com/v1/agents?isPlayableCharacter=true") //isPlayab
 
         const agentNames = agents.map(agent => agent.displayName);
         const agentRoles = agents.map(agent => agent.role?.displayName || "N/A");
-        const agentImages = agents.map(agent => agent.displayIcon);
+        const agentIcons = agents.map(agent => agent.displayIcon); // smaill icons only
+        const agentPortrait = agents.map(agent => agent.fullPortrait); // full body portrait of each agent
 
         // list of abilities for each agent
         const agentAbilities = agents.map(agent => 
