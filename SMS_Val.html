@@ -8,5 +8,60 @@
 
     <body class="bg-slate-950 text-white overflow-hidden h-screen flex flex-col">
 
+    <!--MAP AND MODE DISPLAY-->
+    <header class="p-6 flex justify-between items-start">
+        <div class="bg-black/40 p-4 border-l-4 border-white">
+            <h1 class="text-xl font-bold italic uppercase tracking-tighter">Abyss</h1>
+            <p class="text-xs text-gray-400">STANDARD - CUSTOM</p>
+        </div>
+    </header>
+
+    <!--Main Screen-->
+    <main class="flex flex-1 px-10 gap-10">
+
+        <!--AGENT SELECTION SIDEBAR-->
+        <section class="w-1/4 flex flex-col">
+            <!--Agent Roles-->
+
+            <!--Search bar-->
+            <input type="text" placeholder="Search agent..." 
+                   class="bg-slate-900/80 border border-slate-700 p-2 mb-4 text-sm focus:outline-none focus:border-red-500">
+            
+                   <!--Agent Select-->
+            <div id="agent-list" class="grid grid-cols-4 gap-2 overflow-y-auto pr-2 custom-scrollbar">
+                <div class="aspect-square bg-slate-800 border border-slate-700 hover:border-white cursor-pointer">
+                </div>
+            </div>
+        </section>
+
+        <!--AGENT ABILITIES-->
+        <section class="flex-1 relative flex flex-col justify-center">
+            <!--Agent Main View-->
+            <div id="agent-visual" class="absolute inset-0 -z-10 flex justify-center items-center">
+                <img id="main-portrait" src="" class="h-full object-contain opacity-80" alt="">
+            </div>
+
+            <!--Agent Role and Name-->
+            <div class="max-w-md ml-auto text-right">
+                <p id="agent-role" class="text-red-500 font-bold uppercase tracking-widest text-sm"></p>
+                <h2 id="agent-name" class="text-8xl font-black uppercase italic tracking-tighter mb-6"></h2>
+                
+                <!--Agent Abilities-->
+                <div class="bg-black/20 p-6 backdrop-blur-sm border-r-4 border-red-500">
+                    <h3 class="text-gray-400 uppercase text-xs font-bold mb-4">Abilities</h3>
+                    <div id="abilities-container" class="flex justify-end gap-4">
+                        </div>
+                </div>
+            </div>
+
+            <!--Lock in Button-->
+            <div class="mt-10 flex justify-center">
+                <button class="bg-red-600 hover:bg-red-500 px-16 py-3 font-bold uppercase italic tracking-widest transition-colors">
+                    Lock In
+                </button>
+            </div>
+        </section>
+    </main>
+
     </body>
 </html>
