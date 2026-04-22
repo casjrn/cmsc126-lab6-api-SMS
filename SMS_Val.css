@@ -1,5 +1,53 @@
 
 /*AI*/
+
+#agent-list {
+    max-height: 70vh;  /*fixed size so characters wont be clipped from the screen*/
+}
+
+.agent-card {
+    aspect-ratio: 1 / 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+    padding: 3px; 
+}
+
+.agent-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 70, 85, 0.4), inset 0 0 10px rgba(255, 70, 85, 0.5);
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+.agent-card {
+    transition: all 0.2s ease-in-out;
+}
+
+.agent-card.selected {
+    border-color: #ff4655 !important; 
+    background-color: rgba(255, 70, 85, 0.2);
+    box-shadow: inset 0 0 10px rgba(255, 70, 85, 0.5);
+}
+
+.ability-box-fixed {
+    width: 400px; 
+    min-height: 200px;
+}
+
+.ability-icon.selected {
+    border-color: #ff4655 !important; 
+    background-color: rgba(255, 70, 85, 0.2);
+    box-shadow: 0 0 15px rgba(255, 70, 85, 0.4), inset 0 0 10px rgba(255, 70, 85, 0.5);
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+.ability-icon {
+    transition: all 0.2s ease-in-out;
+}
+
+
 /* Custom Scrollbar for the Agent List */
 .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
