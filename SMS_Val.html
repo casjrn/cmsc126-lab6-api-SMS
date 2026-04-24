@@ -11,8 +11,16 @@
     <!--MAP AND MODE DISPLAY-->
     <header class="p-6 flex justify-between items-start">
         <div class="bg-black/40 p-4 border-l-4 border-white">
-            <h1 class="text-xl font-bold italic uppercase tracking-tighter">Abyss</h1>
-            <p class="text-xs text-gray-400">STANDARD - CUSTOM</p>
+            <h1 class="text-xl font-bold italic uppercase tracking-tighter">SELECT AN AGENT</h1>
+            <p class="text-xs text-gray-400">Click on an icon to view name, role, and abilities.</p>
+        </div>
+
+        <!-- Dashboard Title -->
+        <div class="absolute left-[62%] -translate-x-1/2 text-center whitespace-nowrap">
+            <h1 class="font-black italic uppercase tracking-tighter">
+                <span class="text-7xl text-red-500">VALORANT </span>
+                <span class="text-7xl text-gray-400">DASHBOARD</span>                
+            </h1>
         </div>
     </header>
 
@@ -20,7 +28,7 @@
     <main class="flex flex-1 px-10 gap-10">
 
         <!--AGENT SELECTION SIDEBAR-->
-        <section class="w-1/4 max-w-[320px] flex flex-col">
+        <section class="w-1/4 max-w-[320px] flex-col h-0 flex-1">
             <!--Agent Roles-->
 
             <!--Search bar-->
@@ -28,7 +36,7 @@
                    class="bg-slate-900/80 border border-slate-700 p-2 mb-4 text-sm focus:outline-none focus:border-red-500">
             
                    <!--Agent Select-->
-            <div id="agent-list" class="grid grid-cols-4 gap-3 overflow-y-auto pr-2 custom-scrollbar">
+            <div id="agent-list" class="grid grid-cols-4 gap-x-3 gap-y-3 overflow-y-auto pr-2 custom-scrollbar">
                 <div class="aspect-square bg-slate-800 border border-slate-700 hover:border-white cursor-pointer">
                 </div>
             </div>
@@ -62,9 +70,8 @@
 
         </section>
     </main>
-    
-    <script src="SMS_Val.js"></script>
 
+    <script src="SMS_Val.js"></script>
+    
     </body>
 </html>
->
