@@ -1,8 +1,6 @@
-
-/*AI*/
-
+/*===== AGENTS =====*/
 #agent-list {
-    max-height: 70vh;  /*fixed size so characters wont be clipped from the screen*/
+    max-height: 70vh;
 }
 
 .agent-card {
@@ -48,7 +46,7 @@
 }
 
 
-/* Custom Scrollbar for the Agent List */
+/*====== SCROLLBAR FOR AGENT LIST =====*/
 .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
 }
@@ -56,10 +54,10 @@
     background: rgba(15, 25, 35, 0.1);
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #ff4655; /* Valorant Red */
+    background: #ff4655;
 }
 
-/* Background texture for the whole app */
+/*===== BACKGROUND =====*/
 body {
     background-image: linear-gradient(rgba(15, 25, 35, 0.8), rgba(15, 25, 35, 0.8)), 
                       url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt2909187978d4791e/629929f12959880f68288591/VALORANT_ANALYTICS_Article_Header.jpg');
@@ -67,7 +65,6 @@ body {
     background-position: center;
 }
 
-/* Character Portrait Glow */
 #main-portrait {
     filter: drop-shadow(0 0 20px rgba(255, 70, 85, 0.3));
 }
